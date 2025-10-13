@@ -84,7 +84,7 @@ Glossary terms are embedded into a vector store using a SentenceTransformer mode
 ---
 
 ## Write-Up
-A full 1–2 page project report is included in `docs/writeup.md`.
+Project report is included in `docs/writeup.md`.
 
 ---
 
