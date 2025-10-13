@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data/outputs/cache
+data/*.csv
+data/*.jsonl
+data/*.xlsx
+data/*.html
+!data/glossary.csv
+!data/samples_en.csv
+
+# Secrets
+.env
+*.env

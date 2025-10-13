@@ -1,0 +1,31 @@
+id,src,pair,has_html
+1,Enter your email address to continue.,en-fr,0
+2,Free shipping on orders over $50 at checkout.,en-it,0
+3,Enable two-factor authentication (2FA) in Settings.,en-ja,0
+4,Your refund has been issued to the original payment method.,en-it,0
+5,Copy the Account ID and share it with support.,en-fr,0
+6,Our Privacy Policy has been updated.,en-ja,0
+7,<b>Order number</b>: 12345. Keep this for your records.,en-fr,1
+8,Install the latest GPU driver for optimal performance.,en-it,0
+9,Proceed to checkout to complete your purchase.,en-fr,0
+10,Do not share your password or 2FA codes.,en-ja,0
+11,Confirm your email address to secure your account.,en-fr,0
+12,This item qualifies for free shipping.,en-it,0
+13,We issued a partial refund to your card.,en-it,0
+14,Review the Privacy Policy before proceeding.,en-ja,0
+15,Your Account ID appears in the top-right corner.,en-fr,0
+16,Please complete checkout to place the order.,en-fr,0
+17,Turn on two-factor authentication to protect your data.,en-ja,0
+18,The GPU temperature is within the safe range.,en-it,0
+19,Track your order number in your account.,en-fr,0
+20,Click checkout and apply your coupon code.,en-fr,0
+21,Contact support and provide your Account ID.,en-fr,0
+22,Read our Privacy Policy to learn how we use data.,en-ja,0
+23,You can request a refund within 30 days.,en-it,0
+24,Enter the 2FA code sent to your device.,en-ja,0
+25,Apply the discount at checkout to see free shipping.,en-it,0
+26,Keep your <i>order number</i> for future reference.,en-fr,1
+27,This page uses {{SKU_123}} as a placeholder.,en-fr,0
+28,Refunds are processed to the original payment method.,en-it,0
+29,Enable 2FA to help prevent unauthorized access.,en-ja,0
+30,Please review and accept the Privacy Policy.,en-ja,0

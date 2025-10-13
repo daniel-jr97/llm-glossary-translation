@@ -1,0 +1,10 @@
+term,part_of_speech,domain,definition,en,fr,it,ja,notes
+GPU,noun,tech,Graphics processing unit for parallel computations,GPU,processeur graphique,GPU,ＧＰＵ,Keep as acronym; target forms preferred
+Account ID,noun,finance,Unique identifier for user accounts,account ID,ID de compte,ID account,アカウントID,Do not translate "ID"
+Checkout,verb,commerce,The process of completing a purchase,checkout,paiement,cassa,チェックアウト,May be noun/verb; prefer payment flow sense
+Free shipping,phrase,commerce,No shipping cost,free shipping,livraison gratuite,spedizione gratuita,送料無料,Marketing phrase
+Refund,verb,commerce,To return money to a customer,refund,rembourser,rimborsare,返金する,Use verb form when action
+Email address,noun,general,An address used to send emails,email address,adresse e-mail,indirizzo email,メールアドレス,Keep hyphen/casing where natural
+Two-factor authentication (2FA),noun,security,Additional verification step for login,2FA,Authentification à deux facteurs,Autenticazione a due fatori,二要素認証,Abbrev allowed when clear
+Order number,noun,commerce,Reference number for an order,order number,numéro de commande,numero d'ordine,注文番号,Numeric token nearby
+Privacy Policy,noun,legal,Website policy on data privacy,Privacy Policy,Politique de confidentialité,Informativa sulla privacy,プライバシーポリシー,Title case

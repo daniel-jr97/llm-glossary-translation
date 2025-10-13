@@ -1,0 +1,8 @@
+pandas
+sentence-transformers
+faiss-cpu
+openpyxl
+sacrebleu
+tiktoken
+openai==1.*
+tqdm
