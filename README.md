@@ -53,12 +53,13 @@ Glossary retrieval consistently improves terminology adherence across all models
     pip install -r requirements.txt
     ```
 
-4. **Add your OpenAI API key**
+4. **Add your OpenAI API and GROQ API keys**
     
     Create a `.env` file in the project root:
     
     ```ini
     OPENAI_API_KEY=your_api_key_here
+    GROQ_API_KEY=your_api_key_here
     ```
 
 5. **Run the notebook**
