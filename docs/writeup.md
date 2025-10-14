@@ -44,21 +44,21 @@ All outputs — including per-model CSVs and HTML side-by-side reports — are s
 
 | **Model**     | **Term Accuracy (With Retrieval)** | **Term Accuracy (Without Retrieval)** | **Avg Latency (With Retrieval)** | **Avg Latency (Without Retrieval)** |
 |----------------|------------------------------------|---------------------------------------|----------------------------------|-----------------------------------|
-| GPT-4o-mini    | 0.36                               | 0.25                                  | 1.38 s                           | 1.21 s                            |
-| Llama-3.3-70B  | 0.31                               | 0.21                                  | 1.88 s                           | 1.87 s                            |
-| Llama-3.1-8B   | 0.31                               | 0.16                                  | 1.52 s                           | 2.07 s                            |
+| GPT-4o-mini    | 0.91                               | 0.18                                  | 1.42 s                           | 1.19 s                            |
+| Llama-3.3-70B  | 0.82                               | 0.09                                  | 1.97 s                           | 1.89 s                            |
+| Llama-3.1-8B   | 1.00                               | 0.18                                  | 1.58 s                           | 2.03 s                            |
 
 ### **Key Insights**
-- Glossary retrieval improves term accuracy by **30–50%** across all models.  
-- **GPT-4o-mini** leads overall, balancing accuracy and speed effectively.  
-- **Llama-3.3-70B** delivers competitive precision, while **Llama-3.1-8B** remains faster and more cost-efficient.  
-- Latency differences remain minimal, showing retrieval adds negligible overhead.
+- Glossary retrieval improves term accuracy by **70–80 percentage points** across all models.  
+- **Llama-3.1-8B** achieved perfect adherence (1.00) while maintaining low latency.  
+- **GPT-4o-mini** continues to lead in efficiency and balanced performance across languages.  
+- Latency differences remain minimal, proving retrieval adds negligible computational overhead.
 
-### Visual Comparisions
+### Visual Comparisons
 
-![Term Accuracy by Model and Language](../data/figures/term_accuracy_by_model_language_20251014_011334.png)
+![Term Accuracy by Model and Language](../data/figures/term_accuracy_by_model_language_latest.png)
 
-![Average Latency by Model and Language](../data/figures/latency_by_model_language_20251014_011334.png)
+![Average Latency by Model and Language](../data/figures/latency_by_model_language_latest.png)
 
 ---
 

@@ -29,23 +29,23 @@ id,src,pair,has_html
 28,Refunds are processed to the original payment method.,en-it,0.0
 29,Enable 2FA to help prevent unauthorized access.,en-ja,0.0
 30,Please review and accept the Privacy Policy.,en-ja,0.0
-31,Log in to your account.,en-fr,
-32,Create a new password.,en-it,
-33,Reset your password via email.,en-ja,
-34,Your session has expired. Please sign in again.,en-fr,
-35,Add to cart,en-it,
-36,Remove from cart,en-ja,
-37,Proceed to checkout,en-fr,
-38,Order summary,en-it,
-39,Apply discount code,en-ja,
-40,Payment method,en-fr,
-41,Shipping address,en-it,
-42,Billing address,en-ja,
-43,Track your order,en-fr,
-44,View order details,en-it,
-45,Update profile,en-ja,
-46,Enable push notifications,en-fr,
-47,Turn off notifications,en-it,
-48,Two-factor authentication is required.,en-ja,
-49,Enter the verification code,en-fr,
-50,Contact customer support,en-it,
+31,<b>Limited time:</b> Save 20% at checkout.,en-fr,1.0
+32,Keep your <i>order number</i> ({ORDER_ID}) for reference.,en-it,1.0
+33,"Read our <a href=""https://example.com/terms"">Terms of Service</a> before continuing.",en-ja,1.0
+34,Redeem code <code>{COUPON}</code> to apply the discount.,en-fr,1.0
+35,Your total today is $49.99 (tax included).,en-it,0.0
+36,"Shipping fee is €3,90 for standard delivery.",en-ja,0.0
+37,"The replacement cost is ¥1,200 per device.",en-fr,0.0
+38,This page uses {{SKU_123}} as a placeholder.,en-it,0.0
+39,You can request a refund within 30 days; a 10% restocking fee may apply.,en-ja,0.0
+40,"Welcome back, %USERNAME%. Your account ID is {ACCOUNT_ID}.",en-fr,0.0
+41,"Hello {0}, please verify your email by {DATE}.",en-it,0.0
+42,Prices shown include VAT<sup>*</sup> where applicable.,en-ja,1.0
+43,Your session will expire in 15 minutes.,en-fr,0.0
+44,Contact support at <b>support@example.com</b> if you need assistance.,en-it,1.0
+45,<b>Offer:</b> Get 2 items for $25 or 3 for $30.,en-ja,1.0
+46,Apply <i>SPRING15</i> to receive 15% off your next order.,en-fr,1.0
+47,Express shipping is available for ¥800 in select regions.,en-it,0.0
+48,"Learn more in our <a href=""https://example.com/privacy?src=app"">Privacy Policy</a>.",en-ja,1.0
+49,Please enter the verification code: {2FA_CODE}.,en-fr,0.0
+50,Your subscription renews on {DATE} at 12:00 PM.,en-it,0.0

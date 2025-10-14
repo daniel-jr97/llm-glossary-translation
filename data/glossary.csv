@@ -1,10 +1,99 @@
-term,part_of_speech,domain,definition,en,fr,it,ja,notes
-GPU,noun,tech,Graphics processing unit for parallel computations,GPU,processeur graphique,GPU,ＧＰＵ,Keep as acronym; target forms preferred
-Account ID,noun,finance,Unique identifier for user accounts,account ID,ID de compte,ID account,アカウントID,Do not translate "ID"
-Checkout,verb,commerce,The process of completing a purchase,checkout,paiement,cassa,チェックアウト,May be noun/verb; prefer payment flow sense
-Free shipping,phrase,commerce,No shipping cost,free shipping,livraison gratuite,spedizione gratuita,送料無料,Marketing phrase
-Refund,verb,commerce,To return money to a customer,refund,rembourser,rimborsare,返金する,Use verb form when action
-Email address,noun,general,An address used to send emails,email address,adresse e-mail,indirizzo email,メールアドレス,Keep hyphen/casing where natural
-Two-factor authentication (2FA),noun,security,Additional verification step for login,2FA,Authentification à deux facteurs,Autenticazione a due fatori,二要素認証,Abbrev allowed when clear
-Order number,noun,commerce,Reference number for an order,order number,numéro de commande,numero d'ordine,注文番号,Numeric token nearby
-Privacy Policy,noun,legal,Website policy on data privacy,Privacy Policy,Politique de confidentialité,Informativa sulla privacy,プライバシーポリシー,Title case
+pair,term_src,target,definition,case_sensitive,inflect,notes,status
+en-fr,Account ID,ID du compte,Unique account identifier,true,false,"Lock casing on “ID”.",approved
+en-fr,Privacy Policy,Politique de confidentialité,Legal doc/page title,true,false,,approved
+en-fr,Terms of Service,Conditions d’utilisation,Legal doc/page title,true,false,,approved
+en-fr,Order number,Numéro de commande,Order identifier label,true,false,,approved
+en-fr,checkout,Passer à la caisse,UI step for purchase,false,false,,approved
+en-fr,Free shipping,Livraison gratuite,Offer phrase,false,false,,approved
+en-fr,refund,Remboursement,Commerce action/policy,false,true,,approved
+en-fr,payment method,Mode de paiement,Checkout field label,false,false,,approved
+en-fr,coupon code,Code promo,Discount code label,false,false,,approved
+en-fr,discount,Réduction,Price reduction,false,true,,approved
+en-fr,GPU,GPU,Acronym; keep as is,true,false,,approved
+en-fr,driver,Pilote,Device driver (software),false,false,"Context: GPU driver update.",approved
+en-fr,two-factor authentication,Authentification à deux facteurs,Security feature,false,false,,approved
+en-fr,2FA,2FA,Acronym,true,false,,approved
+en-fr,Settings,Paramètres,Application settings menu,true,false,,approved
+en-fr,support,Assistance,Customer support channel,false,false,,approved
+en-fr,VAT,TVA,Value Added Tax,true,false,,approved
+en-fr,shipping fee,Frais d’expédition,Logistics charge,false,false,,approved
+en-fr,express shipping,Livraison express,Expedited delivery option,false,false,,approved
+en-fr,restocking fee,Frais de réapprovisionnement,Returns policy fee,false,false,,approved
+en-fr,partial refund,Remboursement partiel,Type of refund,false,false,,approved
+en-fr,original payment method,Mode de paiement d’origine,Refund destination,false,false,,approved
+en-fr,track order,Suivre la commande,Order tracking action,false,false,,approved
+en-fr,apply,Appliquer,CTA,false,false,,approved
+en-fr,tax included,Taxes incluses,Price qualifier,false,false,,approved
+en-fr,subscription renews,L’abonnement se renouvelle,Recurring billing phrase,false,false,,approved
+en-fr,verification code,Code de vérification,Security/2FA code,false,false,,approved
+en-fr,{ORDER_ID},{ORDER_ID},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-fr,{ACCOUNT_ID},{ACCOUNT_ID},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-fr,{COUPON},{COUPON},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-fr,{2FA_CODE},{2FA_CODE},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-fr,{{SKU_123}},{{SKU_123}},Double-curly token,true,false,"DO NOT TRANSLATE.",approved
+
+en-it,Account ID,ID dell’account,Unique account identifier,true,false,,approved
+en-it,Privacy Policy,Informativa sulla privacy,Legal doc/page title,true,false,,approved
+en-it,Terms of Service,Termini di servizio,Legal doc/page title,true,false,,approved
+en-it,Order number,Numero d’ordine,Order identifier label,true,false,,approved
+en-it,checkout,Cassa,UI step for purchase,false,false,"Section label; CTA “Procedi al pagamento”.",approved
+en-it,Free shipping,Spedizione gratuita,Offer phrase,false,false,,approved
+en-it,refund,Rimborso,Commerce action/policy,false,true,,approved
+en-it,payment method,Metodo di pagamento,Checkout field label,false,false,,approved
+en-it,coupon code,Codice promozionale,Discount code label,false,false,,approved
+en-it,discount,Sconto,Price reduction,false,true,,approved
+en-it,GPU,GPU,Acronym; keep as is,true,false,,approved
+en-it,driver,Driver,Device driver (software),false,false,,approved
+en-it,two-factor authentication,Autenticazione a due fattori,Security feature,false,false,,approved
+en-it,2FA,2FA,Acronym,true,false,,approved
+en-it,Settings,Impostazioni,Application settings menu,true,false,,approved
+en-it,support,Assistenza,Customer support channel,false,false,,approved
+en-it,VAT,IVA,Value Added Tax,true,false,,approved
+en-it,shipping fee,Costo di spedizione,Logistics charge,false,false,,approved
+en-it,express shipping,Spedizione espressa,Expedited delivery option,false,false,,approved
+en-it,restocking fee,Spese di riassortimento,Returns policy fee,false,false,,approved
+en-it,partial refund,Rimborso parziale,Type of refund,false,false,,approved
+en-it,original payment method,Metodo di pagamento originale,Refund destination,false,false,,approved
+en-it,track order,Traccia ordine,Order tracking action,false,false,,approved
+en-it,apply,Applica,CTA,false,false,,approved
+en-it,tax included,Tasse incluse,Price qualifier,false,false,,approved
+en-it,subscription renews,L’abbonamento si rinnova,Recurring billing phrase,false,false,,approved
+en-it,verification code,Codice di verifica,Security/2FA code,false,false,,approved
+en-it,{ORDER_ID},{ORDER_ID},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-it,{ACCOUNT_ID},{ACCOUNT_ID},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-it,{COUPON},{COUPON},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-it,{2FA_CODE},{2FA_CODE},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-it,{{SKU_123}},{{SKU_123}},Double-curly token,true,false,"DO NOT TRANSLATE.",approved
+
+en-ja,Account ID,アカウントID,Unique account identifier,true,false,"Keep 'ID' uppercase.",approved
+en-ja,Privacy Policy,プライバシーポリシー,Legal doc/page title,true,false,,approved
+en-ja,Terms of Service,利用規約,Legal doc/page title,true,false,,approved
+en-ja,Order number,注文番号,Order identifier label,true,false,,approved
+en-ja,checkout,チェックアウト,UI step for purchase,false,false,"CTA may be “お支払いへ進む”.",approved
+en-ja,Free shipping,送料無料,Offer phrase,false,false,,approved
+en-ja,refund,返金,Commerce action/policy,false,true,,approved
+en-ja,payment method,お支払い方法,Checkout field label,false,false,,approved
+en-ja,coupon code,クーポンコード,Discount code label,false,false,,approved
+en-ja,discount,割引,Price reduction,false,true,,approved
+en-ja,GPU,GPU,Acronym; keep as is,true,false,,approved
+en-ja,driver,ドライバー,Device driver (software),false,false,,approved
+en-ja,two-factor authentication,2要素認証,Security feature,false,false,,approved
+en-ja,2FA,2FA,Acronym,true,false,,approved
+en-ja,Settings,設定,Application settings menu,true,false,,approved
+en-ja,support,サポート,Customer support channel,false,false,,approved
+en-ja,VAT,付加価値税（VAT）,Value Added Tax,true,false,"Keep acronym in parentheses.",approved
+en-ja,shipping fee,送料,Logistics charge,false,false,,approved
+en-ja,express shipping,迅速配送,Expedited delivery option,false,false,,approved
+en-ja,restocking fee,再入荷手数料,Returns policy fee,false,false,,approved
+en-ja,partial refund,一部返金,Type of refund,false,false,,approved
+en-ja,original payment method,元の支払い方法,Refund destination,false,false,,approved
+en-ja,track order,注文を追跡,Order tracking action,false,false,,approved
+en-ja,apply,適用,CTA,false,false,,approved
+en-ja,tax included,税込,Price qualifier,false,false,,approved
+en-ja,subscription renews,サブスクリプションが更新されます,Recurring billing phrase,false,false,,approved
+en-ja,verification code,認証コード,Security/2FA code,false,false,,approved
+en-ja,{ORDER_ID},{ORDER_ID},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-ja,{ACCOUNT_ID},{ACCOUNT_ID},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-ja,{COUPON},{COUPON},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-ja,{2FA_CODE},{2FA_CODE},Placeholder token,true,false,"DO NOT TRANSLATE.",approved
+en-ja,{{SKU_123}},{{SKU_123}},Double-curly token,true,false,"DO NOT TRANSLATE.",approved

@@ -2,18 +2,18 @@
 
 ### Project Overview
 
-This project implements a glossary-aware LLM translation pipeline that compares **GPT-4o-mini**, **Llama-3.1-8B**, and **Llama-3.3-70B** models across **English→French**, **English→Italian**, and **English→Japanese**. Using glossary retrieval as contextual guidance, the system demonstrates improved term accuracy and translation consistency—with GPT-4o-mini achieving the highest overall term adherence (0.36 with retrieval). The full results, metrics, and side-by-side comparison reports are available in the `/data` folder.
+This project implements a glossary-aware LLM translation pipeline that compares **GPT-4o-mini**, **Llama-3.1-8B**, and **Llama-3.3-70B** models across **English→French**, **English→Italian**, and **English→Japanese**. Using glossary retrieval as contextual guidance, the system demonstrates improved term accuracy and translation consistency—with GPT-4o-mini achieving the highest overall term adherence (0.91 with retrieval). The full results, metrics, and side-by-side comparison reports are available in the `/data` folder.
 
 ### Results Snapshot (50 Segments)
 
 | **Model**     | **Term Accuracy (With Retrieval)** | **Term Accuracy (Without Retrieval)** | **Avg Latency (With Retrieval)** | **Avg Latency (Without Retrieval)** |
 |----------------|------------------------------------|---------------------------------------|----------------------------------|-----------------------------------|
-| GPT-4o-mini    | 0.36                               | 0.25                                  | 1.38 s                           | 1.21 s                            |
-| Llama-3.3-70B  | 0.31                               | 0.21                                  | 1.88 s                           | 1.87 s                            |
-| Llama-3.1-8B   | 0.31                               | 0.16                                  | 1.52 s                           | 2.07 s                            |
+| GPT-4o-mini    | 0.91                               | 0.18                                  | 1.42 s                           | 1.19 s                            |
+| Llama-3.3-70B  | 0.82                               | 0.09                                  | 1.97 s                           | 1.89 s                            |
+| Llama-3.1-8B   | 1.00                               | 0.18                                  | 1.58 s                           | 2.03 s                            |
 
 **Key Insight:**  
-Glossary retrieval consistently improves terminology adherence across all models, with GPT-4o-mini maintaining the best overall balance of accuracy and speed.
+Glossary retrieval consistently improves terminology adherence across all models, with **Llama-3.1-8B** achieving perfect adherence and **GPT-4o-mini** maintaining the best balance of accuracy and speed.
 
 ---
 
@@ -72,8 +72,8 @@ Glossary retrieval consistently improves terminology adherence across all models
 
 | Metric | With Retrieval | Without Retrieval |
 |---------|----------------|------------------|
-| **Samples (n)** | 30 | 30 |
-| **Average Term Adherence** | 0.344 | 0.233 |
+| **Samples (n)** | 50 | 50 |
+| **Average Term Adherence** | 0.91 | 0.15 |
 
 ### Example Output
 **EN→IT**  
@@ -83,9 +83,9 @@ Glossary retrieval consistently improves terminology adherence across all models
 
 ### Visualizations
 
-![Term Accuracy by Model and Language](data/figures/term_accuracy_by_model_language_20251014_011334.png)
+![Term Accuracy by Model and Language](data/figures/term_accuracy_by_model_language_latest.png)
 
-![Average Latency by Model and Language](data/figures/latency_by_model_language_20251014_011334.png)
+![Average Latency by Model and Language](data/figures/latency_by_model_language_latest.png)
 
 
 ## Write-Up

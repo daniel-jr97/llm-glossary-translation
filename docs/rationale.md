@@ -2,61 +2,82 @@
 
 ## **Introduction**
 
-This project was designed not only to implement a glossary-aware translation pipeline, but also to explore the practical considerations of using **multiple language models** in production environments. While many teams rely solely on commercial models such as GPT or Gemini for translation and content generation, the growing availability of open-source alternatives presents opportunities for cost optimization, latency reduction, and long-term flexibility.  
+This project was designed to not only evaluate glossary-aware translation performance but also to understand why relying on a single model is not a sustainable solution for multilingual production systems.  
+By comparing **GPT-4o-mini (OpenAI)**, **Llama-3.1-8B**, and **Llama-3.3-70B (Groq)**, the pipeline highlights how organizations can achieve a balance between **translation quality**, **cost efficiency**, **long-term adaptability**, and **production latency**.
 
-The rationale behind comparing **GPT-4o-mini**, **Llama-3.1-8B**, and **Llama-3.3-70B** lies in balancing **quality**, **cost**, **scalability**, and **latency** — the four key pillars that determine model viability in enterprise-grade AI pipelines.
-
----
-
-## **1. Quality — No Single Model Excels at Every Language or Domain**
-
-Translation quality varies across languages, and a single model rarely performs optimally across all linguistic structures and cultural nuances.  
-- **Observation:** GPT-4o-mini demonstrated the strongest overall term adherence and fluency, particularly in European languages (French, Italian). However, Llama-3 models performed comparably in Japanese, where prompt sensitivity and token efficiency played a greater role.  
-- **Conclusion:** Depending solely on one model introduces a quality bottleneck. By maintaining a multi-model pipeline, developers can route tasks dynamically — selecting the best-performing model per language or content type.  
-- **Benefit:** This approach allows for **customized quality tuning** per language while retaining centralized glossary and evaluation infrastructure.
+The results show that glossary retrieval improved terminology accuracy across all models — yet each model behaves differently depending on language, context, and deployment constraints. These findings reflect a broader industry trend where AI-driven content systems are moving toward **multi-model orchestration** rather than dependence on a single provider.
 
 ---
 
-## **2. Cost — Open-Source Models Reduce Dependency and Long-Term Spend**
+## **1. Quality — One Model Is Not the Solution for All Languages**
 
-As organizations scale their AI usage, model inference costs can become a significant operational expense. Commercial APIs like OpenAI and Google Gemini offer strong performance but introduce **recurring usage fees** and **vendor lock-in**.  
-- **Observation:** While GPT-4o-mini delivers high accuracy, Groq-hosted open-source models like **Llama-3.1-8B** and **Llama-3.3-70B** demonstrated competitive performance at **zero licensing cost**.  
-- **Implication:** For sustained translation workloads or internal content pipelines, leveraging **open-source models** can cut cloud inference costs substantially.  
-- **Recommendation:** A hybrid approach — using commercial models for critical, high-quality outputs and open-source models for bulk or less sensitive translations — offers the best trade-off between cost and quality.
+No single model performs equally well across all languages or domains.  
+During evaluation, **GPT-4o-mini** demonstrated the strongest overall balance of accuracy and speed, while **Llama-3.1-8B** achieved perfect term adherence (1.00) for several language pairs such as English→Italian and English→Japanese.
+
+| Model | Term Accuracy (With Retrieval) | Term Accuracy (Without Retrieval) |
+|:--|--:|--:|
+| GPT-4o-mini | 0.91 | 0.18 |
+| Llama-3.3-70B | 0.82 | 0.09 |
+| Llama-3.1-8B | 1.00 | 0.18 |
+
+These results confirm that model performance is **language-dependent**.  
+While GPT models excel in fluency and tone adaptation, open-source Llama models show stronger control and adherence when guided by glossary constraints.  
+A multi-model approach ensures that translation tasks can be **routed dynamically to the most suitable model per language or content type**, avoiding performance bottlenecks and ensuring consistent quality across regions.
 
 ---
 
-## **3. Long-Term Visibility — Industry Movement Toward Open-Source and Fine-Tuning**
+## **2. Cost — Open-Source Models Reduce Long-Term Spending**
 
-Current enterprise AI adoption heavily favors commercial APIs for speed and convenience. However, the long-term trajectory of the industry suggests a gradual shift toward **open-source ecosystems** and **in-house model fine-tuning**.  
-- **Trend:** As AI infrastructure matures, companies are increasingly investing in fine-tuning open-source models to align with their domain, terminology, and compliance standards.  
-- **Benefit:** This approach provides **greater control**, **data privacy**, and **customizability**, reducing dependence on third-party APIs.  
-- **Strategic Insight:** Evaluating multiple models today prepares organizations for a near future where **open-source LLMs** — optimized for specific use cases — will form the backbone of enterprise translation and localization systems.
+As companies continue to scale their AI translation and localization workflows, **API costs from commercial models** (such as GPT or Gemini) can accumulate rapidly.  
+Open-source models like **Llama-3.1-8B** and **Llama-3.3-70B**, hosted on efficient inference platforms such as Groq, operate at **zero licensing cost**, making them ideal for internal or large-scale production use.
+
+While **GPT-4o-mini** provides top-tier accuracy, the Llama models achieved competitive adherence (0.82–1.00 with retrieval), proving that organizations can reach **near-commercial quality at a fraction of the cost**.
+
+**Strategic takeaway:**  
+Businesses can implement a **hybrid architecture** — using GPT for mission-critical, customer-facing translations and open-source models for high-volume or internal content — achieving **cost savings without compromising consistency**.
 
 ---
 
-## **4. Latency — The Trade-Off Between Model Power and Production Speed**
+## **3. Long-Term Visibility — Moving Toward Fine-Tuned Open Models**
 
-While larger models offer improved reasoning and contextual accuracy, they also introduce significant **latency overhead** — a key issue for real-time production applications.  
-- **Observation:** In this project, GPT-4o-mini and Llama-3.1-8B showed comparable response times (~1.3–1.5 s), whereas Llama-3.3-70B nearly doubled the latency (~1.9 s) for marginal accuracy gains.  
-- **Impact:** In high-volume environments (e.g., localization pipelines, chat-based translations), even small delays compound to reduce throughput and user experience.  
-- **Recommendation:** Production-grade systems should implement **dynamic model routing** — using smaller, faster models for real-time interactions and reserving larger models for offline or high-precision translations.  
+Today, companies depend heavily on commercial APIs to meet deadlines and deploy AI quickly. However, the long-term trend points toward **fine-tuned open-source ecosystems**.  
+Organizations are increasingly exploring **Llama, Mistral, or Falcon models** fine-tuned on proprietary data, glossaries, and compliance requirements.
+
+This evolution provides:
+- **Greater control** over linguistic style and data handling,  
+- **Enhanced adaptability** for specific domains, and  
+- **Reduced vendor lock-in** over time.
+
+The results of this project demonstrate that even without fine-tuning, **retrieval-augmented prompting** can achieve substantial accuracy gains.  
+Future pipelines will likely combine this retrieval layer with **in-house fine-tuning**, building sustainable, cost-effective translation frameworks that remain independent of external vendors.
+
+---
+
+## **4. Latency — Large Models Are Powerful but Production-Slow**
+
+While larger models deliver stronger reasoning and contextual understanding, they also introduce **higher latency**, making them less practical for real-time production environments.
+
+| Model | Avg Latency (With Retrieval) | Avg Latency (Without Retrieval) |
+|:--|--:|--:|
+| GPT-4o-mini | 1.42 s | 1.19 s |
+| Llama-3.3-70B | 1.97 s | 1.89 s |
+| Llama-3.1-8B | 1.58 s | 2.03 s |
+
+Even with retrieval enabled, latency increases by less than **0.4 seconds on average**, keeping overall performance within acceptable real-time thresholds.  
+However, larger models like **Llama-3.3-70B** are slower and better suited for **offline or batch processing**, while smaller models such as **GPT-4o-mini** excel in live, user-facing workflows.
+
+**Recommendation:**  
+Production-grade systems should adopt **dynamic model routing**, leveraging smaller models for speed and reserving larger models for precision-sensitive translations.
 
 ---
 
 ## **Conclusion**
 
-This multi-model comparison underscores that **no single LLM offers the optimal balance of accuracy, cost, and latency** across all use cases.  
+This multi-model comparison highlights that **no single LLM can simultaneously optimize for quality, cost, scalability, and latency**.  
+By maintaining a **glossary-aware, retrieval-augmented, and multi-model architecture**, organizations can achieve:
+- **High-quality** output tailored per language,  
+- **Cost reduction** via open-source deployment,  
+- **Future readiness** for fine-tuning and data ownership, and  
+- **Sustainable latency** for real-world production use.
 
-- **GPT-4o-mini** sets a high bar for translation quality.  
-- **Llama-3.1-8B** offers a cost-efficient alternative for real-time deployment.  
-- **Llama-3.3-70B** provides a scalable foundation for future fine-tuning.  
-
-By maintaining a multi-model, glossary-aware pipeline, organizations can achieve **quality assurance**, **cost control**, and **long-term adaptability** — critical elements for sustainable AI integration.
-
----
-
-### **Future Outlook**
-As model ecosystems evolve, the focus will shift from single “best” models toward **model orchestration**, where systems intelligently select and combine models based on task type, latency budget, and language domain. This project represents a practical first step toward that adaptive, multi-model AI architecture.
-
----
+This represents a realistic blueprint for the **next generation of AI translation systems** — modular, efficient, and adaptable, powered by collaboration among multiple specialized models rather than reliance on one.
