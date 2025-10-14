@@ -54,6 +54,12 @@ All outputs — including per-model CSVs and HTML side-by-side reports — are s
 - **Llama-3.3-70B** delivers competitive precision, while **Llama-3.1-8B** remains faster and more cost-efficient.  
 - Latency differences remain minimal, showing retrieval adds negligible overhead.
 
+### Visual Comparisions
+
+![Term Accuracy by Model and Language](data/figures/term_accuracy_by_model_language_20251014_011334.png)
+
+![Average Latency by Model and Language](data/figures/latency_by_model_language_20251014_011334.png)
+
 ---
 
 ## **Qualitative Examples**
