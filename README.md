@@ -1,16 +1,19 @@
 # LLM-Only Translation Pipeline with Glossary Retrieval
 
-This repository contains a modular, end-to-end LLM-based translation system that integrates glossary retrieval to improve terminology consistency across multilingual outputs. The pipeline demonstrates the difference between translations with and without glossary retrieval using OpenAI’s `gpt-4o-mini` model and sentence-transformer embeddings.
+### Project Overview
 
----
+This project implements a glossary-aware LLM translation pipeline that compares **GPT-4o-mini**, **Llama-3.1-8B**, and **Llama-3.3-70B** models across **English→French**, **English→Italian**, and **English→Japanese**. Using glossary retrieval as contextual guidance, the system demonstrates improved term accuracy and translation consistency—with GPT-4o-mini achieving the highest overall term adherence (0.36 with retrieval). The full results, metrics, and side-by-side comparison reports are available in the `/data` folder.
 
-## Project Overview
+### Results Snapshot (50 Segments)
 
-**Goal:**  
-Evaluate whether adding retrieved glossary terms as contextual constraints improves translation quality across three languages — French (FR), Italian (IT), and Japanese (JA).
+| **Model**     | **Term Accuracy (With Retrieval)** | **Term Accuracy (Without Retrieval)** | **Avg Latency (With Retrieval)** | **Avg Latency (Without Retrieval)** |
+|----------------|------------------------------------|---------------------------------------|----------------------------------|-----------------------------------|
+| GPT-4o-mini    | 0.36                               | 0.25                                  | 1.38 s                           | 1.21 s                            |
+| Llama-3.3-70B  | 0.31                               | 0.21                                  | 1.88 s                           | 1.87 s                            |
+| Llama-3.1-8B   | 0.31                               | 0.16                                  | 1.52 s                           | 2.07 s                            |
 
-**Key Idea:**  
-Glossary terms are embedded into a vector store using a SentenceTransformer model. At inference, for each source segment, the pipeline retrieves the top-k most relevant terms and injects them into the LLM’s prompt, guiding it toward consistent and domain-specific translations.
+**Key Insight:**  
+Glossary retrieval consistently improves terminology adherence across all models, with GPT-4o-mini maintaining the best overall balance of accuracy and speed.
 
 ---
 
@@ -76,12 +79,6 @@ Glossary terms are embedded into a vector store using a SentenceTransformer mode
 *Source:* Free shipping on orders over $50 at checkout.  
 *With Retrieval:* Spedizione gratuita su ordini superiori a $50 alla cassa.  
 *Without Retrieval:* Spedizione gratuita su ordini superiori a $50 al momento del checkout.
-
-**Result Files**
-- `data/results_batch1.csv`  
-- `data/side_by_side_<timestamp>.html`
-
----
 
 ## Write-Up
 Project report is included in `docs/writeup.md`.
