@@ -83,9 +83,9 @@ Glossary retrieval consistently improves terminology adherence across all models
 
 ### Visualizations
 
-![Term Accuracy by Model and Language](data/figures/term_accuracy_by_model_language_20251014_011334.png.png)
+![Term Accuracy by Model and Language](data/figures/term_accuracy_by_model_language_20251014_011334.png)
 
-![Average Latency by Model and Language](data/figures/latency_by_model_language_20251014_011334.png.png)
+![Average Latency by Model and Language](data/figures/latency_by_model_language_20251014_011334.png)
 
 
 ## Write-Up
