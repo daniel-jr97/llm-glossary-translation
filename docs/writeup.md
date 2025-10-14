@@ -56,9 +56,9 @@ All outputs — including per-model CSVs and HTML side-by-side reports — are s
 
 ### Visual Comparisions
 
-![Term Accuracy by Model and Language](data/figures/term_accuracy_by_model_language_20251014_011334.png)
+![Term Accuracy by Model and Language](../data/figures/term_accuracy_by_model_language_20251014_011334.png)
 
-![Average Latency by Model and Language](data/figures/latency_by_model_language_20251014_011334.png)
+![Average Latency by Model and Language](../data/figures/latency_by_model_language_20251014_011334.png)
 
 ---
 
