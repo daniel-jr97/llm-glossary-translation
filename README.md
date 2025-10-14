@@ -81,6 +81,13 @@ Glossary retrieval consistently improves terminology adherence across all models
 *With Retrieval:* Spedizione gratuita su ordini superiori a $50 alla cassa.  
 *Without Retrieval:* Spedizione gratuita su ordini superiori a $50 al momento del checkout.
 
+### Visualizations
+
+![Term Accuracy by Model and Language](data/figures/term_accuracy_by_model_language_20251014_011334.png.png)
+
+![Average Latency by Model and Language](data/figures/latency_by_model_language_20251014_011334.png.png)
+
+
 ## Write-Up
 Project report is included in `docs/writeup.md`.
 
