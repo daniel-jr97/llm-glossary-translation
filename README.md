@@ -125,3 +125,7 @@ Project: LLM-Only Translation Pipeline with Glossary Retrieval
 
 ## License
 This project is released under the [MIT License](LICENSE).
+
+
+## Demo Video 
+Youtube Link: https://youtu.be/iL0LgkRb9JA
